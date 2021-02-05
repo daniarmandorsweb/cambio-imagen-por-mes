@@ -1,0 +1,60 @@
+@font-face {
+  font-family:NotoSansCJKjp-DemiLight;
+  src:url(../fonts/NotoSansCJKjp-DemiLight.min.woff);
+}
+
+:root {
+  --ruta:none;
+}
+
+.body {
+  width:100vw;
+  height:100vh;
+  margin:0;
+  background-color:#282828;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.title-month {
+  font:32px NotoSansCJKjp-DemiLight;
+  color: #bdae93;
+  width:100%;
+  height:100%;
+  margin-top:0;
+  margin-bottom:0;
+  background-color:rgba(40, 40, 40, 0.5);
+  transition:font-size ease 0.3s;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.footer {
+  font:24px NotoSansCJKjp-Demilight;
+  color:#bdae93;
+  text-align:center;
+  bottom:0;
+  position:fixed;
+  width:100%;
+  background-color:#1d2021;
+}
+
+.month {
+  width:600px;
+  height:400px;
+  box-shadow:0 0 0 10px #313131,
+             0 0 0 11px #665c53;
+  background-image:var(--ruta);
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+.month:hover {
+  cursor:pointer;
+}
+
+.month:hover > .title-month {
+  font-size:38px;
+}
